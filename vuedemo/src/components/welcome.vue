@@ -4,6 +4,7 @@
     <p>
       <router-link to="/">{{ jumpTo }}</router-link>
     </p>
+    <p>{{ msg | capitalize }}</p>
   </div>
 </template>
 
@@ -16,6 +17,13 @@ export default {
       name: 'mike',
       num: 1,
       jumpTo: '到首页去'
+    }
+  },
+  filters: {
+    capitalize: function (value) {
+      if (!value) return ''
+      value = value.toString()
+      return value.charAt(0).toUpperCase() + value.slice(1)
     }
   }
 }

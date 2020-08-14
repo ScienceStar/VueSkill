@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="VueSkill:Web">
+    <output-path>$PROJECT_DIR$/out/artifacts/VueSkill_Web</output-path>
+    <root id="archive" name="VueSkill_Web.war">
+      <element id="artifact" artifact-name="VueSkill:Web exploded" />
+    </root>
+  </artifact>
+</component>
