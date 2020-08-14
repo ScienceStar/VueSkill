@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Vue 测试实例</title>
+    <script src="js/vue.js"></script>
+</head>
+<style>
+    .class1 {
+        background: #444;
+        color: #eee;
+    }
+</style>
+<body>
+<div id="app">
+    <button @click="num++">+</button>
+    <p>{{ message }} {{ name }},You are the {{ num }} person!</p>
+    <h3>{{ getMessage() }}</h3>
+
+    <label for="r1">修改颜色</label><input type="checkbox" v-model="use" id="r1">
+    <br><br>
+    <div v-bind:class="{'class1': use}">
+        v-bind:class 指令
+    </div>
+    <div v-if="seen">
+        <pre><a v-bind:href="url">到百度去</a></pre>
+    </div>
+    <button v-on:click="reverseMessage">反转字符串</button>
+</div>
+
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            message: 'welcome',
+            name: 'jack',
+            num: 0,
+            use: false,
+            seen: true,
+            url: 'http://www.baidu.com'
+        },
+        methods: {
+            getMessage: function () {
+                return this.name + " " + this.num;
+            },
+            reverseMessage: function () {
+                this.message = this.message.split('').reverse().join('')
+            }
+        }
+    })
+</script>
+</body>
+</html>
