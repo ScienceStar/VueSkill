@@ -9,9 +9,18 @@
       <input type="text" v-model="num2"/>
       <span>=</span><input type="text" v-model="num3"/></p>
     <p>{{ name }},You are the {{ num }} persons!</p>
-    <p>
-      <router-link to="/welcome">到欢迎页面去</router-link>
-    </p>
+    <ul>
+      <li>
+        <p>
+        <router-link to="/welcome">到欢迎页面去</router-link>
+      </p>
+      </li>
+      <li>
+        <p>
+          <router-link to="/knowledge">到基础测试页面去</router-link>
+        </p>
+      </li>
+    </ul>
   </div>
 </template>
 
