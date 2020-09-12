@@ -14,7 +14,7 @@ export default new Router({
       component: HelloWorld
     },
     {
-      path: '/hello',
+      path: '/welcom',
       name: 'welcome',
       component: welcome
     },
