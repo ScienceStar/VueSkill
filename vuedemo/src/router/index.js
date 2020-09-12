@@ -19,7 +19,7 @@ export default new Router({
       component: welcome
     },
     {
-      path: '/knowledge',
+      path: '/link',
       name: 'knowledge',
       component: knowledge
     }
