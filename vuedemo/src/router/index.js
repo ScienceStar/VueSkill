@@ -19,7 +19,7 @@ export default new Router({
       component: welcome
     },
     {
-      path: '/knowledge2',
+      path: '/knowledge',
       name: 'knowledge',
       component: knowledge
     }
@@ -29,3 +29,7 @@ export default new Router({
 //sed -i 's/http:\/\/updates.jenkins-ci.org\/download/https:\/\/mirrors.tuna.tsinghua.edu.cn\/jenkins/g' /var/jenkins_home/updates/default.json
 //sed -i 's/http:\/\/www.google.com/https:\/\/www.baidu.com/g' /var/jenkins_home/updates/default.json
 //1a69cf0fcd18984169bd1bcc1b05c8b322fb1083
+
+
+
+
